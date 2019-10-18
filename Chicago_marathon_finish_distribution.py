@@ -11,7 +11,7 @@ from datetime import time
 from scipy.stats import percentileofscore
 from scipy.stats import scoreatpercentile
 
-# define get functions thhat download html page content
+# define get functions that download html page content
 def log_error(e):
     print(e)
 
@@ -91,6 +91,7 @@ def clean_raw_df(raw_df):
     cleaned_df.drop(cleaned_df[cleaned_df['Finish'] > time(7,0,0)].index, axis=0, inplace=True) # exclude errorneous entries beyond cut-off time
     cleaned_df['Finish (mins)'] = cleaned_df['Finish'].apply(time_to_float)
     return cleaned_df
+
 
 # paste race url below, then scrape and clean data
 chicago_url = r'https://www.strava.com/running_races/2782?hl=en-GB'
