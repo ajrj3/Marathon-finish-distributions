@@ -1,5 +1,5 @@
 # Marathon-finish-distributions
-Plots distribution of finish times from races logged on Strava.
+Plots distribution of finish times from a race logged on Strava.
 
 1. Data collection - Beautiful Soup used to scrape athlete data from Strava's race webpage
 2. Data analysis - pandas used for data wrangling and analysis
